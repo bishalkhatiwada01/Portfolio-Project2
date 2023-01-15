@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+}
+.title{
+    margin-top: -5em;
+    text-align: center;
+    padding: 1rem 0;
+}
+.title h2{
+    font-family: "Poppins";
+    font-size: 6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+.title p{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+
+/* blog */
+.blog{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+}
+.blog-content{
+    margin: 2rem 0;
+}
+.blog-img{
+    border-radius: 2rem;
+    margin: 2em 2em 0em 2em;
+    height: 50em;
+    position: relative;
+    overflow: hidden;
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: rgb(12, 12, 12);
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 2rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+    text-align: justify;
+}
+
+/* End of Blog */
+
+@media screen and (min-width: 767px){
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: .2rem;
+    }
+
+    .blog-text span{
+        font-size: 1.4rem;
+        font-weight: 400;
+        padding-bottom: 0.5rem;
+    }
+    .blog-text h2{
+        padding: 1rem 0;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .blog-text p{
+        font-weight: 300;
+        font-size: 1.5rem;
+        opacity: 0.9;
+        padding-bottom: 1.2rem;
+        text-align: justify;
+    }
+
+    .blog .title{
+        background-color: #ade8f4;
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .blog-item{
+        width: 88%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .blog-content{
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
